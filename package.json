@@ -1,0 +1,21 @@
+{
+    "name": "2d-portfolio",
+    "private": true,
+    "version": "0.0.1",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "deploy": "vercel --prod"
+    },
+    "dependencies": {
+        "kaboom": "^3000.1.17",
+        "vercel": "^34.2.8"
+    },
+    "devDependencies": {
+        "prettier": "^3.3.2",
+        "terser": "^5.31.1",
+        "vite": "^5.3.2"
+    }
+}
