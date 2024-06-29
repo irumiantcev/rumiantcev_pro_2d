@@ -41,8 +41,6 @@ k.scene('main', async () => {
     k.add(map);
 
     for (const layer of layers) {
-        console.log('layer', layer);
-
         if (layer.name === 'boundaries') {
             for (const boundary of layer.objects) {
                 map.add([
@@ -56,8 +54,6 @@ k.scene('main', async () => {
 
                 if (boundary.name) {
                     player.onCollide(boundary.name, () => {
-                        console.log('boundary', boundary);
-
                         if (boundary.name !== 'wall') {
                             player.isInDialogue = true;
                             displayDialogue(dialogueData[boundary.name], () => (player.isInDialogue = false));
@@ -167,7 +163,7 @@ k.scene('main', async () => {
         }
     });
 
-    k.onKeyDown(key => {
+    k.onKeyDown(() => {
         const keyMap = [
             k.isKeyDown('right'),
             k.isKeyDown('left'),

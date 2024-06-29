@@ -26,6 +26,11 @@ body {
     flex-direction: column;
     color: rgb(238, 238, 238);
     user-select: none;
+    line-height: 32px;
+}
+
+.note a {
+    color: rgb(238, 238, 238);
 }
 
 .textbox-container {
