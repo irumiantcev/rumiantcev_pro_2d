@@ -10,12 +10,14 @@
         "deploy": "vercel --prod"
     },
     "dependencies": {
+        "@vercel/analytics": "^2.0.1",
         "kaboom": "^3000.1.17",
-        "vercel": "^34.2.8"
+        "vercel": "^51.3.0"
     },
     "devDependencies": {
-        "prettier": "^3.3.2",
-        "terser": "^5.31.1",
-        "vite": "^5.3.2"
-    }
+        "prettier": "^3.8.3",
+        "terser": "^5.46.1",
+        "vite": "^8.0.8"
+    },
+    "packageManager": "yarn@4.11.0"
 }
